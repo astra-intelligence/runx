@@ -1,6 +1,6 @@
 {
   "schema": "runx.bounty_verification.v1",
-  "package": "astra-intelligence/postmortem-maker@sha-13351dcdafe3",
+  "package": "astra-intelligence/postmortem-maker@sha-279a27f325fd",
   "cli_version": "runx-cli 0.9.1",
   "checks": {
     "published_registry_listing": "passed",

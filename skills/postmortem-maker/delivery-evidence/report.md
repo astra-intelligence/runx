@@ -4,7 +4,7 @@
 `astra-intelligence/postmortem-maker` — a published runx graph skill that turns a resolved incident record into a source-cited postmortem and executes a sealed outbox delivery only when the evidence settles the cause.
 
 ## Package facts
-- Package: astra-intelligence/postmortem-maker@sha-13351dcdafe3
+- Package: astra-intelligence/postmortem-maker@sha-279a27f325fd
 - Registry: https://api.runx.ai/skills/astra-intelligence/postmortem-maker
 - PR: https://github.com/runxhq/runx/pull/530
 - runx CLI: runx-cli 0.9.1 (>= 0.6.14 requirement) — verified via `runx --version`
@@ -30,8 +30,8 @@
 
 ## How a new user installs, runs, and verifies
 ```
-runx add astra-intelligence/postmortem-maker@sha-13351dcdafe3 --registry https://api.runx.ai
-runx skill astra-intelligence/postmortem-maker@sha-13351dcdafe3 --registry https://api.runx.ai --inputs - <<'JSON'
+runx add astra-intelligence/postmortem-maker@sha-279a27f325fd --registry https://api.runx.ai
+runx skill astra-intelligence/postmortem-maker@sha-279a27f325fd --registry https://api.runx.ai --inputs - <<'JSON'
 {"incident_ref":"inc-1","incident_source":{"kind":"inline","fragments":[{"id":"f1","source":"log","text":"The batch failed at export."}]},"postmortem_policy":{"allow_publish":true,"outbox_dir":"outbox"}}
 JSON
 runx verify --receipt <receipt.json> --json

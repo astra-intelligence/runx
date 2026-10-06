@@ -1,18 +1,18 @@
 {
   "schema": "runx.bounty_evidence.v1",
-  "package": "astra-intelligence/postmortem-maker@sha-13351dcdafe3",
+  "package": "astra-intelligence/postmortem-maker@sha-279a27f325fd",
   "cli_version": "runx-cli 0.9.1",
   "publisher_owner": "astra-intelligence",
   "package_name": "postmortem-maker",
-  "version": "sha-13351dcdafe3",
+  "version": "sha-279a27f325fd",
   "registry_ref": "https://api.runx.ai/skills/astra-intelligence/postmortem-maker",
-  "public_url": "https://runx.ai/x/astra-intelligence/postmortem-maker@sha-13351dcdafe3",
+  "public_url": "https://runx.ai/x/astra-intelligence/postmortem-maker@sha-279a27f325fd",
   "source_url": "https://github.com/astra-intelligence/runx/blob/79afa7622a8db1766561dbc92cfdc860fbe91e88/skills/postmortem-maker/SKILL.md",
   "pr_url": "https://github.com/runxhq/runx/pull/530",
   "x_yaml": "https://raw.githubusercontent.com/astra-intelligence/runx/79afa7622a8db1766561dbc92cfdc860fbe91e88/skills/postmortem-maker/X.yaml",
   "skill_md": "https://raw.githubusercontent.com/astra-intelligence/runx/79afa7622a8db1766561dbc92cfdc860fbe91e88/skills/postmortem-maker/SKILL.md",
   "publish_method": "runx registry publish ./SKILL.md --registry https://api.runx.ai --profile ./X.yaml",
-  "install_command": "runx add astra-intelligence/postmortem-maker@sha-13351dcdafe3 --registry https://api.runx.ai",
+  "install_command": "runx add astra-intelligence/postmortem-maker@sha-279a27f325fd --registry https://api.runx.ai",
   "harness_local": "passed",
   "harness_cases": [
     "postmortem-maker-publishable-seals",
@@ -22,7 +22,7 @@
   ],
   "hosted_harness": "passed",
   "dogfood": {
-    "package": "astra-intelligence/postmortem-maker@sha-13351dcdafe3",
+    "package": "astra-intelligence/postmortem-maker@sha-279a27f325fd",
     "input": {
       "incident_ref": "inc-libgit2-issue-6521",
       "incident_source": {
@@ -108,7 +108,7 @@
     },
     {
       "key": "version",
-      "value": "sha-13351dcdafe3"
+      "value": "sha-279a27f325fd"
     },
     {
       "key": "registry_ref",
@@ -116,7 +116,7 @@
     },
     {
       "key": "public_url",
-      "value": "https://runx.ai/x/astra-intelligence/postmortem-maker@sha-13351dcdafe3"
+      "value": "https://runx.ai/x/astra-intelligence/postmortem-maker@sha-279a27f325fd"
     },
     {
       "key": "pr_url",
@@ -144,7 +144,7 @@
     },
     {
       "key": "install_command",
-      "value": "runx add astra-intelligence/postmortem-maker@sha-13351dcdafe3 --registry https://api.runx.ai"
+      "value": "runx add astra-intelligence/postmortem-maker@sha-279a27f325fd --registry https://api.runx.ai"
     },
     {
       "key": "harness_case_count",
@@ -160,7 +160,7 @@
     },
     {
       "key": "dogfood_command",
-      "value": "runx skill astra-intelligence/postmortem-maker@sha-13351dcdafe3 --registry https://api.runx.ai --inputs -"
+      "value": "runx skill astra-intelligence/postmortem-maker@sha-279a27f325fd --registry https://api.runx.ai --inputs -"
     },
     {
       "key": "receipt_verify_verdict",
@@ -168,11 +168,11 @@
     },
     {
       "key": "new_user_install",
-      "value": "runx add astra-intelligence/postmortem-maker@sha-13351dcdafe3 --registry https://api.runx.ai"
+      "value": "runx add astra-intelligence/postmortem-maker@sha-279a27f325fd --registry https://api.runx.ai"
     },
     {
       "key": "new_user_run",
-      "value": "runx skill astra-intelligence/postmortem-maker@sha-13351dcdafe3 --registry https://api.runx.ai --inputs -"
+      "value": "runx skill astra-intelligence/postmortem-maker@sha-279a27f325fd --registry https://api.runx.ai --inputs -"
     },
     {
       "key": "new_user_verify",
