@@ -1,0 +1,71 @@
+{
+  "schema": "runx.bounty_evidence.v1",
+  "package": "astra-intelligence/postmortem-maker@sha-13351dcdafe3",
+  "cli_version": "runx-cli 0.9.1",
+  "publisher_owner": "astra-intelligence",
+  "package_name": "postmortem-maker",
+  "version": "sha-13351dcdafe3",
+  "registry_ref": "https://api.runx.ai/skills/astra-intelligence/postmortem-maker",
+  "public_url": "https://runx.ai/x/astra-intelligence/postmortem-maker@sha-13351dcdafe3",
+  "source_url": "https://github.com/astra-intelligence/runx/blob/79afa7622a8db1766561dbc92cfdc860fbe91e88/skills/postmortem-maker/SKILL.md",
+  "pr_url": "https://github.com/runxhq/runx/pull/530",
+  "x_yaml": "https://raw.githubusercontent.com/astra-intelligence/runx/79afa7622a8db1766561dbc92cfdc860fbe91e88/skills/postmortem-maker/X.yaml",
+  "skill_md": "https://raw.githubusercontent.com/astra-intelligence/runx/79afa7622a8db1766561dbc92cfdc860fbe91e88/skills/postmortem-maker/SKILL.md",
+  "publish_method": "runx registry publish ./SKILL.md --registry https://api.runx.ai --profile ./X.yaml",
+  "install_command": "runx add astra-intelligence/postmortem-maker@sha-13351dcdafe3 --registry https://api.runx.ai",
+  "harness_local": "passed",
+  "harness_cases": [
+    "postmortem-maker-publishable-seals",
+    "postmortem-maker-unknowns-block-publish",
+    "postmortem-maker-invented-citation-refuses",
+    "postmortem-maker-needs-fragments"
+  ],
+  "hosted_harness": "passed",
+  "dogfood": {
+    "package": "astra-intelligence/postmortem-maker@sha-13351dcdafe3",
+    "input": {
+      "incident_ref": "inc-libgit2-issue-6521",
+      "incident_source": {
+        "kind": "web_fetch",
+        "url": "https://api.github.com/repos/nltk/nltk/issues/3733"
+      }
+    },
+    "command": "runx skill astra-intelligence/postmortem-maker@sha-13351dcdafe3 --registry https://api.runx.ai --inputs -",
+    "receipt_ref": "sha256:9cd34dd39c08709722f031e82120248128ddbb68b93d06b937506d7d03fde9c4",
+    "verify_verdict": "valid",
+    "harness_cases": [
+      {
+        "name": "postmortem-maker-publishable-seals",
+        "status": "sealed"
+      },
+      {
+        "name": "postmortem-maker-unknowns-block-publish",
+        "status": "sealed"
+      },
+      {
+        "name": "postmortem-maker-invented-citation-refuses",
+        "status": "sealed"
+      },
+      {
+        "name": "postmortem-maker-needs-fragments",
+        "status": "sealed"
+      }
+    ]
+  },
+  "observations": {
+    "source_read": "web_fetch of https://api.github.com/repos/nltk/nltk/issues/3733",
+    "timeline_count": 3,
+    "impact": "Users running the standard venv-inside-project layout hit a false-positive import guard",
+    "root_cause_status": "known",
+    "unknowns": 0,
+    "action_items": 1,
+    "publish_result": "executed sealed-outbox write",
+    "harness_case_names": [
+      "postmortem-maker-publishable-seals",
+      "postmortem-maker-unknowns-block-publish",
+      "postmortem-maker-invented-citation-refuses",
+      "postmortem-maker-needs-fragments"
+    ],
+    "receipt_id": "sha256:9cd34dd39c08709722f031e82120248128ddbb68b93d06b937506d7d03fde9c4"
+  }
+}
